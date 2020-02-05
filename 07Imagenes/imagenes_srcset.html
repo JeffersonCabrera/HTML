@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+    <img src="img/bride.jpg"
+        srcset="img/bride.jpg 1x,img/man.jpeg 1.5x, img/dogs.jpg 2x">
+
+    <img src="img/bride.jpg"
+        srcset="img/bride.jpg 500w,img/man.jpeg 8000w, img/dogs.jpg 1500w">
+-->
+    <picture>
+        <source srcset="img/dogs.jpg" media="(min-width: 800px)">
+        <source srcset="img/man.jpeg" media="(min-width: 500px)">
+        <img src="img/bride.jpg" alt="Foto de una novia">
+    </picture>
+            
+            
+            <!-- Problemas con los atributos de srcset de la versión 40
+            de Google Chrome Es una característica, no un error. Chrome no cambia el tamaño porque Chrome ya tiene una
+            imagen más grande en caché, por lo que no es necesario descargar datos nuevos de la misma imagen. En caso de
+            que desee utilizar imágenes diferentes o la misma imagen con diferentes cultivos, utilice el elemento de
+            imagen. Las imágenes receptivas pueden diferenciarse técnicamente entre 2 tipos. srcset con los descriptores
+            de fuente (deje que el navegador elija la imagen correcta según el tamaño / resolución de la pantalla, el
+            ancho de banda …): descriptor de densidad (x) (para tamaños de imagen estáticos, Retina vs. resolución
+            normal) descriptor de ancho (w) y el atributo de tamaños correspondiente (para imágenes flexibles,
+            receptivas / adaptativas (automáticamente también incluye optimización Retina) y el elemento de imagen con
+            su fuente [media] hijos (le da al autor control sobre qué srcset debe ser elegido por el navegador
+            dependiendo de las consultas de medios específicas) Entonces img[srcset] es para cambiar la resolución y la
+            picture es para que diferentes imágenes reaccionen a su diseño -->
+</body>
+
+</html>
