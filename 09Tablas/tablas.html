@@ -1,47 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <table border="1">
-       <thead>
-        <tr>
-            <th>Lunes</th>
-            <th>Martes</th>
-            <th>Miercoles</th>
-            <th>Jueves</th>
-            <th>Viernes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Html</td>
-            <td>Php</td>
-            <td>Css</td>
-            <td>Java</td>
-            <td>Python</td>
-        </tr>
-        <tr>
-            <td>Java</td>
-            <td>Sql</td>
-            <td>Angular</td>
-            <td>PWA</td>
-            <td>Algoritmos</td>
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th>Mañana</th>
+                <th>Tarde</th>
+                <th>Noche</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Desayuno</td>
+                <td>Almuerzo</td>
+                <td>Cena</td>
+            </tr>
+        </tbody>
+        <tfoot style="background: yellow;">
+            <tr>
+                <td colspan="3">Mi tabla 1 Jefferson</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Html</td>
+                <td>Php</td>
+                <td>Css</td>
+                <td>Java</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Sql</td>
+                <td>Angular</td>
+                <td>PWA</td>
+                <td>Algoritmos</td>
+            </tr>
         <tfoot>
             <tr>
                 <td>6 creditos</td>
                 <td>2 creditos</td>
                 <td>4 creditos</td>
                 <td>5 creditos</td>
-                <td>6 creditos</td> 
+                <td>6 creditos</td>
             </tr>
         </tfoot>
-    </tbody>
+        </tbody>
     </table>
+<p></p>
+    <table>
+        <CAPtion>Mi horario de clases</CAPtion>
+        <colgroup>
+            <col span="4"> 
+            <col style="background: yellow;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Html</td>
+                <td rowspan="2">Php</td>
+                <td>Css</td>
+                <td>Java</td>
+                <td>Python</td>
+            </tr>
+            <tr>  
+                <td>Angular</td>
+                <td>PWA</td>
+                <td>Algoritmos</td>
+            </tr>
+            <tr>
+                <td colspan="5">Recreo</td> 
+            </tr> 
+            <tr>
+                <td>Java</td>
+                <td>Sql</td>
+                <td>Angular</td>
+                <td>PWA</td>
+                <td>Algoritmos</td>
+            </tr>
+
+        <tfoot>
+            <tr>
+                <td>6 creditos</td>
+                <td>2 creditos</td>
+                <td>4 creditos</td>
+                <td>5 creditos</td>
+                <td>6 creditos</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+
 </body>
+
 </html>
