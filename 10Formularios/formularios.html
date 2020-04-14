@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form>
+        <label for="nombre">Ingrese su nombre:</label>
+        <input id="nombre">
+
+        <p>Otra forma:</p>
+
+        <!-- <div>
+            <label>Ingrese su nombre de usuario:
+                <input id="username" name="username" value="Alvaro">
+            </label>
+        </div> -->
+
+        <fieldset>
+            <legend> Datos de Usuario</legend>
+
+            <div>`
+                <input id="username" name="username" placeholder="Ingrese Usuario" required>
+            </div>
+            <div>
+                <label>Ingrese su nombre de usuario:
+                    <input id="username" name="username" value="Alvaro">
+                </label>
+            </div>
+
+            <div>
+                <label>Ingrese su Contraseña:
+                    <input id="password" type="password" name="password" required>
+
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend> Tus datos personales</legend>
+            <div>
+                <label>Ingrese su correo:
+                    <input id="email" type="email" name="email">
+
+                </label>
+            </div>
+
+            <div>
+                <label>Ingrese su fecha de nacimiento:
+                    <input id="date" type="date" name="date">
+
+                </label>
+            </div>
+            <div>
+                <label>Ingrese edad:
+                    <input id="edad" type="number" name="edad" value="18" readonly>
+
+                </label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tus pasatiempos</legend>
+            <label>
+                <input type="checkbox" name="pasa1">
+                Deporte
+            </label>
+            <label>
+                <input type="checkbox" name="pasa1">
+                Cine
+            </label>
+
+            <label>
+                <input type="checkbox" name="pasa1">
+                Peliculas
+            </label>
+            <label>
+                <input type="checkbox" name="pasa1">
+                Libros
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tu género</legend>
+            <label><input type="radio" name="gender"> Hombre</label>
+            <label><input type="radio" name="gender"> Mujer</label>
+            <label><input type="radio" name="gender"> Prefiero no decirlo</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select y Opciones</legend>
+            <label for="country"> Escoge tu país</label>
+            <select name="country" id="country">
+                <optgroup label="America">
+                    <option value="pe">Perú</option>
+                    <option value="co">Colombia</option>
+                    <option value="Ch">Chile</option>
+                </optgroup>
+
+                <optgroup label="Europa">
+                    <option value="es">España</option>
+                    <option value="it">Italia</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe algo">
+    </textarea>
+
+    <div>
+        <input type="submit" value="Iniciar Sesión">
+        <!-- <button>Enviar</button> --> 
+    </div>
+    </form>
+
+    <script>
+        document.getElementById('password')
+            .addEventListener('keyup', e => {
+                console.log(e.target.value)
+            })
+
+    </script>
+
+</body>
+
+</html>
