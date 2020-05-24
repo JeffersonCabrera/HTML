@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactividad y contenido embebido</title>
+</head>
+<body>
+    <h1>Contenido Interactivo</h1>
+    <details>
+        <summary>HTML</summary>
+        <p>Lenguaje de marcado de Hipertexto</p>
+        <p>Se creó en 1989</p>
+    </details>
+    <dialog id="modal"> 
+        <h2>Curso de HTML5 desde Cero</h2>
+        <p>Precio: S/120.00</p>
+        <p>Profesor: Jefferson Cabrera</p>
+        <button id="close">Cerrar Modal</button>
+    </dialog>
+    <button id="button">Abrir Modal</button>
+    <script>
+        const modal = document.getElementById('modal');
+        const button = document.getElementById('button');
+        const close = document.getElementById('close');
+        button.addEventListener('click',() =>{
+            modal.setAttribute('open','true')
+        })
+        close.addEventListener('click',() =>{
+            modal.removeAttribute('open')
+        })
+    </script>
+</body>
+</html>

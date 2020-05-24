@@ -17,6 +17,36 @@
     </video>
     <button id="play">Play</button>
     <button id="pause">Pause</button>
+
+    
+    <article>
+        <section>
+            <p>
+                A partir de abril de 2018, las políticas de reproducción automática de Chrome cambiaron:
+
+"Las políticas de reproducción automática de Chrome son simples:
+
+La reproducción automática silenciada siempre está permitida.
+Se permite la reproducción automática con sonido si:
+<ul>
+    <li>El usuario ha interactuado con el dominio (clic, toque, etc.).</li>
+    <li>En el escritorio, se ha cruzado el umbral del índice de interacción de medios del usuario, lo que significa que el usuario ha reproducido video con sonido anteriormente.</li>
+    <li>En el móvil, el usuario ha agregado el sitio a su pantalla de inicio.
+        también</li>
+</ul>
+ 
+Los fotogramas superiores pueden delegar el permiso de reproducción automática a sus iframes para permitir la reproducción automática con sonido. "
+El sitio para desarrolladores de Chrome tiene más información, incluidos algunos ejemplos de programación, que se pueden encontrar aquí: 
+<a href="https://developers.google.com/web/updates/2017/09/autoplay-policy-changes" target="_blank">https://developers.google.com/web/updates/2017/09/autoplay-policy-changes</a>
+
+           
+</p>
+        </section>
+
+    </article>
+    <audio src="multimedia/audio.mp3" id="audio" autoplay controls>
+    </audio>  
+
     <script>
         const video = document.getElementById('video');
         const play = document.getElementById('play');
